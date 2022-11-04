@@ -3,9 +3,13 @@ const sitesRouter = express.Router()
 const Site = require('../models/site.js')
 
 // Index 
-sitesRouter.get('/', (req, res) => {
-    res.send('hi')
-})
+sitesRouter.get("/", (req, res) => {
+    Site.find({}, (error, allSites) => {
+      res.render("index.ejs", {
+        sites: allSites,
+      })
+    })
+  })
 
 // New
 
