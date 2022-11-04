@@ -16,6 +16,18 @@ sitesRouter.get('/new', (req, res) => {
     res.render('new.ejs')
 })
 
+// Update 
+sitesRouter.put('/:id', (req, res) => {
+    req.body.completed = (req.body.completed === "on") ? true : false;
+    Site.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true },
+      (err, updatedSite) => {
+      res.redirect(`/sites/${req.params.id}`);
+    })
+  })
+
 // Create
 sitesRouter.post('/', (req, res) => {
     if (req.body.completed === "on") {
@@ -28,8 +40,18 @@ sitesRouter.post('/', (req, res) => {
     })
 })
 
+// Edit
+sitesRouter.get('/:id/edit', (req, res) => {
+    Site.findById(req.params.id, (error, foundSite) => {
+      res.render("edit.ejs", {
+        site: foundSite,
+        siteId: req.params.id
+      })
+    })
+  })
+
 // Show
-sitesRouter.get("/:id", (req, res) => {
+sitesRouter.get('/:id', (req, res) => {
     Site.findById(req.params.id, (err, foundSite) => {
       res.render("show.ejs", {
         site: foundSite,
