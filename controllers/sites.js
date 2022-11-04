@@ -16,6 +16,13 @@ sitesRouter.get('/new', (req, res) => {
     res.render('new.ejs')
 })
 
+// Delete Route
+sitesRouter.delete('/:id', (req, res) => {
+    Site.findByIdAndRemove(req.params.id, (err, data) => {
+      res.redirect("/sites")
+    })
+  })
+
 // Update 
 sitesRouter.put('/:id', (req, res) => {
     req.body.completed = (req.body.completed === "on") ? true : false;
