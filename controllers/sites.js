@@ -12,7 +12,9 @@ sitesRouter.get("/", (req, res) => {
   })
 
 // New
-
+sitesRouter.get('/new', (req, res) => {
+    res.render('new.ejs')
+})
 
 // Create
 sitesRouter.post('/', (req, res) => {
