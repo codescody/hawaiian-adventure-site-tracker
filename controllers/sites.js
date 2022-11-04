@@ -26,4 +26,13 @@ sitesRouter.post('/', (req, res) => {
     })
 })
 
+// Show
+sitesRouter.get("/:id", (req, res) => {
+    Site.findById(req.params.id, (err, foundSite) => {
+      res.render("show.ejs", {
+        site: foundSite,
+      })
+    })
+  })
+
 module.exports = sitesRouter
