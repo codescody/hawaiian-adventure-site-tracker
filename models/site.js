@@ -4,6 +4,7 @@ const siteSchema = new mongoose.Schema({
     name: {type: String, required: true},
     island: {type: String, required: true},
     category: {type: String, required: true},
+    description: {type: String, required: true},
     completed: Boolean
 })
 
