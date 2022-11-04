@@ -12,7 +12,7 @@
         <% sites.forEach(site => { %>
             <%= site.name %>,
             <%= site.island %>
-            <a href="/sites/<%=sites._id%>"><img src=<%= site.image %>></a>
+            <a href="/sites/<%=site._id%>"><img src=<%= site.image %>></a>
         <% }) %>
         <script src="" async defer></script>
     </body>
