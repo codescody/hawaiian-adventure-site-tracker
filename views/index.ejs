@@ -6,7 +6,7 @@
         <title>Hawaiian Islands Adventure Site Tracker</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <style>
@@ -14,18 +14,23 @@
                 max-width: 400px;
                 max-height: 400px;
             }
+            div {
+                background-color: rgb(178, 73, 73);
+            }
         </style>
+        <nav>
+            <img src="public/img/mountainwave.jpg">
+            <h1>Title here</h1>
+            <a>Possible authentication</a>
+        </nav>
         <% sites.forEach(site => { %>
+            <div id="home-container">
             <%= site.name %>,
             <%= site.island %>
             <a href="/sites/<%=site._id%>"><img src=<%= site.image %>></a>
-
-            <form action="/sites/<%= site.id %>?_method=DELETE" method="POST">
-                <input type="submit" value="DELETE" />
-            </form>
-
-
+            </div>
         <% }) %>
+        
         <script src="" async defer></script>
     </body>
 </html>
