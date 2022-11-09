@@ -15,7 +15,7 @@ body {
     width: 90%;
     justify-content: center;
     align-items: center;
-    color: rgb(64, 113, 159)
+    color: rgb(64, 113, 159);
 }
 #add-link {
     display: flex;
@@ -33,20 +33,34 @@ body {
     margin: 2em;
     border-radius: 2em;
 }
-h1 {
-    margin-top: 20px;
-}
 img{
-    max-width: 400px;
-    max-height: 400px;
+    width: 300px;
+    height: 200px;
 }
-#home-container {
+#item-container {
     display: inline-flex;
-    background-color: rgb(178, 73, 73);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin: 3em;
     padding: 1em;
+    color:rgb(64, 113, 159);
+    font-weight: 900;
 }
 nav {
     display: flex;
     background-color: white;
+}
+a {
+    text-decoration: none;
+    color:rgb(64, 113, 159);
+}
+#image-box {
+    width: 700px;
+    height: 400px
+}
+#map-box {
+    width: 700px;
+    height: 400px
 }

@@ -16,9 +16,9 @@
         </nav>
         <div id="items-container">
         <% sites.forEach(site => { %>
-            <div id="home-container">
-            <%= site.name %>,
-            <%= site.island %>
+            <div id="item-container">
+            <a href="/sites/<%=site._id%>"><%= site.name %>,
+            <%= site.island %></a>
             <a href="/sites/<%=site._id%>"><img src=<%= site.image %>></a>
             </div>
         <% }) %>
