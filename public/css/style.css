@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, .8);
     margin: 2em;
     border-radius: 2em;
 }
@@ -65,4 +65,14 @@ a {
     width: 700px;
     height: 400px;
     margin: 1em;
+}
+#form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255, .8);
+    margin: 2em;
+    border-radius: 2em;
+    font-size: 2em;
+    color:rgb(64, 113, 159)
 }

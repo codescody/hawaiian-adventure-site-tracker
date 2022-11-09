@@ -10,7 +10,8 @@
         <%-include('./partials/header.ejs')%>
     </head>
     <body>
-        <h1>New Adventure Site</h1>
+        <div id="form-container">
+        <h2>New Adventure Site</h2>
 		<form action="/sites" method="POST">
 			Name: <input type="text" name="name" placeholder="Name" required /><br />
 			Island: <input type="text" name="island" placeholder="Island" required /><br />
@@ -21,7 +22,7 @@
             Completed: <input type="checkbox" name="completed" /><br />
 			<input type="submit" name="" value="Add Item" />
 		</form>
-        <a href="/sites">home</a>
+        </div>
         <script src="" async defer></script>
     </body>
 </html>
