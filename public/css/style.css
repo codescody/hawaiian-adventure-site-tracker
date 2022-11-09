@@ -58,9 +58,11 @@ a {
 }
 #image-box {
     width: 700px;
-    height: 400px
+    height: 400px;
+    margin: 1em;
 }
 #map-box {
     width: 700px;
-    height: 400px
+    height: 400px;
+    margin: 1em;
 }
