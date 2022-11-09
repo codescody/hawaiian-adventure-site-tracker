@@ -9,20 +9,12 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <style>
-            img{
-                max-width: 400px;
-                max-height: 400px;
-            }
-            div {
-                background-color: rgb(178, 73, 73);
-            }
-        </style>
         <nav>
-            <img src="public/img/mountainwave.jpg">
-            <h1>Title here</h1>
-            <a>Possible authentication</a>
+            <img id="home-icon" src="https://static.vecteezy.com/system/resources/previews/000/585/465/non_2x/mountain-and-water-logo-business-template-vector.jpg">
+            <h1 id="home-title">Hawaiian Adventure Tracker</h1>
+            <a id="add-link" href="/sites/new"><img id="add-button" src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/512/add_green.png"></a>
         </nav>
+        <div id="items-container">
         <% sites.forEach(site => { %>
             <div id="home-container">
             <%= site.name %>,
@@ -30,7 +22,7 @@
             <a href="/sites/<%=site._id%>"><img src=<%= site.image %>></a>
             </div>
         <% }) %>
-        
+        </div>
         <script src="" async defer></script>
     </body>
 </html>

@@ -1,3 +1,52 @@
 body {
-    background-color: blue;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.pexels.com/photos/4318922/pexels-photo-4318922.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-size: cover;
+    font-family: sans-serif;
+}
+#home-icon {
+    max-width: 5em;
+    max-height: 5em;
+}
+#home-title {
+    display: flex;
+    flex: center;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(64, 113, 159)
+}
+#add-link {
+    display: flex;
+    flex: end;
+}
+#add-button {
+    max-width: 5em;
+    max-height: 5em;
+}
+#items-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 2em;
+    border-radius: 2em;
+}
+h1 {
+    margin-top: 20px;
+}
+img{
+    max-width: 400px;
+    max-height: 400px;
+}
+#home-container {
+    display: inline-flex;
+    background-color: rgb(178, 73, 73);
+    margin: 3em;
+    padding: 1em;
+}
+nav {
+    display: flex;
+    background-color: white;
 }
