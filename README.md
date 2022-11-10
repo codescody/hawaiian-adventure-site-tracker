@@ -1,5 +1,9 @@
 # Hawaiian Adventure Tracker APP README 
 
+## Link to Live Site
+
+https://cc-hawaiian-adventure-project.herokuapp.com/sites
+
 ## Getting Started
 
 This is my first full stack application build. It was an exciting way to see what I can do while learning Express and MongoDB. I am excited to work continually on this and update it as I go.
